@@ -21,23 +21,26 @@ const Navbar = () => {
           <Link to='/'>Home</Link>
         </li>
         <li className='font-ibm'>
-        <Link to={{
-      pathname: '/Activities', }} state={{title:"Surfing"}}>Surfing</Link>
+          <Link to={{
+            pathname: '/Activities',
+          }} state={{ title: "Surfing" }}>Surfing</Link>
         </li>
         <li className='font-ibm'>
-        <Link to={{
-      pathname: '/Activities', }} state={{title:"Traditional Festivals"}}>Traditional Festivals</Link>
+          <Link to={{
+            pathname: '/Activities',
+          }} state={{ title: "Traditional Festivals" }}>Traditional Festivals</Link>
         </li>
         <li className='font-ibm'>
-        <Link to={{
-      pathname: '/Activities', }} state={{title:"Volcanoes"}}>Volcanoes</Link>
+          <Link to={{
+            pathname: '/Activities',
+          }} state={{ title: "Volcanoes" }}>Volcanoes</Link>
         </li>
       </ul>
       <div className='hidden md:flex'>
         <button className='my-6 backdrop:to-blue-500'>Book a Trip</button>
       </div>
 
-      {/* Hamburger */}
+      {/* Menu */}
       <div onClick={handleNav} className='md:hidden z-10'>
         {nav ? <AiOutlineClose className='text-black' size={20} /> : <HiOutlineMenuAlt4 size={20} />}
       </div>
@@ -50,15 +53,18 @@ const Navbar = () => {
           </li>
           <li className='border-b font-ibm'>
             <Link to={{
-      pathname: '/Activities', }} state={{title:"Surfing"}}>Surfing</Link>
+              pathname: '/Activities',
+            }} state={{ title: "Surfing" }}>Surfing</Link>
           </li>
           <li className='border-b font-ibm'>
             <Link to={{
-      pathname: '/Activities', }} state={{title:"Traditional Festivals"}}>Traditional Festivals</Link>
+              pathname: '/Activities',
+            }} state={{ title: "Traditional Festivals" }}>Traditional Festivals</Link>
           </li>
           <li className='border-b font-ibm'>
             <Link to={{
-      pathname: '/Activities', }} state={{title:"Volcanoes"}}>Volcanoes</Link>
+              pathname: '/Activities',
+            }} state={{ title: "Volcanoes" }}>Volcanoes</Link>
           </li>
           <div className='flex flex-col'>
             <button className='my-6 backdrop:to-blue-500 font-ibm'>Book a Trip</button>

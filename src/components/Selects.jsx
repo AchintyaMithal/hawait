@@ -5,7 +5,7 @@ import SelectsCard from './SelectsCard';
 class Selects extends Component {
 
 
-
+  //CORS  is not  enabeled thats why using hardcoded values
   high = [{
     "title": "Surfing",
     "description": "Best Hawaiian islands for surfing.",

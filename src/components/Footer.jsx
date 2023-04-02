@@ -14,16 +14,15 @@ const Footer = () => {
 
 
   return (
-    
-<footer className={`${
-        hasContent ? 'static' : 'fixed bottom-0 w-full'
+
+    <footer className={`${hasContent ? 'static' : 'fixed bottom-0 w-full'
       } dark:bg-gray-800`}>
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm font-aloha text-white text-2xl sm:text-center ">Aloha
-    </span>
-    
-    </div>
-</footer>
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="font-aloha text-white text-2xl sm:text-center ">Aloha
+        </span>
+
+      </div>
+    </footer>
 
   );
 };
