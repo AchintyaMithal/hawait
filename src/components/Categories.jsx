@@ -101,15 +101,15 @@ class Categories extends Component  {
     
     <div class="flex flex-row items-center overflow-hidden ">
         <div>
-        <h5 class="mb-1 ml-6 text-xl font-bold text-gray-900 ">Haldwin Merone</h5>
-        <span class="text-sm ml-8 text-gray-500 dark:text-gray-400">Guide Sice 2022</span>
+        <h5 class="mb-1 ml-6 text-xl font-bold font-ibm text-gray-900 ">Haldwin Merone</h5>
+        <span class="text-sm ml-8 text-gray-500 font-ibm dark:text-gray-400">Guide Sice 2022</span>
         </div>
         <div>
         <img class="w-24 h-24  ml-10 mt-10 rounded-full shadow-lg" src={Desktop_Ellipse_10} alt="Bonnie image"/>
         </div>
     </div>
     <div class="ml-10 mb-10">
-            <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact</a>
+            <a href="#" class="inline-flex items-center px-4 py-2 font-ibm text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact</a>
             
         </div>
 </div>
