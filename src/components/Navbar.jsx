@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
-
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -17,13 +17,24 @@ const Navbar = () => {
         <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>Aloha</h1>
       </div>
       <ul className='hidden md:flex'>
-        <li  className='font-ibm'>Home</li>
-        <li className='font-ibm'>Surfing</li>
-        <li className='font-ibm'>Hula</li>
-        <li className='font-ibm'>Vulcanos</li>
+        <li className='font-ibm'>
+          <Link to='/'>Home</Link>
+        </li>
+        <li className='font-ibm'>
+        <Link to={{
+      pathname: '/Activities', }} state={{title:"Surfing"}}>Surfing</Link>
+        </li>
+        <li className='font-ibm'>
+        <Link to={{
+      pathname: '/Activities', }} state={{title:"Traditional Festivals"}}>Traditional Festivals</Link>
+        </li>
+        <li className='font-ibm'>
+        <Link to={{
+      pathname: '/Activities', }} state={{title:"Volcanoes"}}>Volcanoes</Link>
+        </li>
       </ul>
       <div className='hidden md:flex'>
-      <button className='my-6 backdrop:to-blue-500'>Book a Trip</button>
+        <button className='my-6 backdrop:to-blue-500'>Book a Trip</button>
       </div>
 
       {/* Hamburger */}
@@ -34,17 +45,24 @@ const Navbar = () => {
       {/* Mobile menu dropdown */}
       <div onClick={handleNav} className={nav ? 'absolute text-black left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
         <ul>
-          
-          <li className='border-b font-ibm'>Home</li>
-          <li className='border-b font-ibm'>Surfing</li>
-          <li className='border-b font-ibm'>Hula</li>
-          <li className='border-b font-ibm'>Vulcanos</li>
-          
+          <li className='border-b font-ibm'>
+            <Link to='/'>Home</Link>
+          </li>
+          <li className='border-b font-ibm'>
+            <Link to={{
+      pathname: '/Activities', }} state={{title:"Surfing"}}>Surfing</Link>
+          </li>
+          <li className='border-b font-ibm'>
+            <Link to={{
+      pathname: '/Activities', }} state={{title:"Traditional Festivals"}}>Traditional Festivals</Link>
+          </li>
+          <li className='border-b font-ibm'>
+            <Link to={{
+      pathname: '/Activities', }} state={{title:"Volcanoes"}}>Volcanoes</Link>
+          </li>
           <div className='flex flex-col'>
             <button className='my-6 backdrop:to-blue-500 font-ibm'>Book a Trip</button>
-           
           </div>
-          
         </ul>
       </div>
     </div>
