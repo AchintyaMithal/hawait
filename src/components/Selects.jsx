@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { useState } from 'react';
 
 import SelectsCard from './SelectsCard';
 
@@ -22,7 +21,6 @@ class Selects extends Component {
   }]
   constructor() {
     super();
-    console.log("in cons");
     this.state = {
       high: this.high,
       loading: false

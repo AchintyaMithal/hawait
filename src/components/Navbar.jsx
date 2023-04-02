@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className='flex w-full justify-between  items-center h-20 px-4 absolute z-10 bg-slate-200'>
       <div>
-        <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>Aloha</h1>
+        <h1 onClick={handleNav} className={logo ? 'hidden font-aloha' : 'block font-aloha'}>Aloha</h1>
       </div>
       <ul className='hidden md:flex'>
         <li className='font-ibm'>

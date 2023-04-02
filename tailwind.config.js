@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontFamily:{
       ibm: ["IBM Plex Mono","monospace"],
+      aloha:["Fasthand","cursive"]
     },
   },
   plugins: [],

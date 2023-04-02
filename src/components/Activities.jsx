@@ -1,7 +1,5 @@
 import React from 'react';
-import SelectsCard from './SelectsCard';
 import {  useLocation} from 'react-router-dom';
-import { render } from '@testing-library/react';
 
 function Activities  (props)  {
   const location = useLocation();

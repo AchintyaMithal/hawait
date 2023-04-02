@@ -76,7 +76,6 @@ class Categories extends Component  {
 }]
   constructor(){
     super();
-    console.log("in cons");
     this.state={
       categories : this.categories,
       loading: false
