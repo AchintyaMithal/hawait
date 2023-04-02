@@ -12,16 +12,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className='md:bg-white md:rounded-md md:navbar-container md:shadow-md'>
-    <div className='flex rounded-t-md md:flex w-full justify-between  items-center h-20 px-4 absolute  '>
+    <div className='flex w-full justify-between  items-center h-20 px-4 absolute z-10 bg-slate-200'>
       <div>
         <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>Aloha</h1>
       </div>
       <ul className='hidden md:flex'>
-        <li>Home</li>
-        <li>Surfing</li>
-        <li>Hula</li>
-        <li>Volcanos</li>
+        <li  className='font-ibm'>Home</li>
+        <li className='font-ibm'>Surfing</li>
+        <li className='font-ibm'>Hula</li>
+        <li className='font-ibm'>Vulcanos</li>
       </ul>
       <div className='hidden md:flex'>
       <button className='my-6 backdrop:to-blue-500'>Book a Trip</button>
@@ -36,19 +35,18 @@ const Navbar = () => {
       <div onClick={handleNav} className={nav ? 'absolute text-black left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
         <ul>
           
-          <li className='border-b'>Home</li>
-          <li className='border-b'>Surfing</li>
-          <li className='border-b'>Hula</li>
-          <li className='border-b'>Volcano</li>
+          <li className='border-b font-ibm'>Home</li>
+          <li className='border-b font-ibm'>Surfing</li>
+          <li className='border-b font-ibm'>Hula</li>
+          <li className='border-b font-ibm'>Vulcanos</li>
           
           <div className='flex flex-col'>
-            <button className='my-6 backdrop:to-blue-500'>Book a Trip</button>
+            <button className='my-6 backdrop:to-blue-500 font-ibm'>Book a Trip</button>
            
           </div>
           
         </ul>
       </div>
-    </div>
     </div>
   );
 };
