@@ -9,9 +9,9 @@ import Desktop_Image_1 from '../assets/Desktop_Image_1.png';
 
 const Hero = () => {
 
-  const [highlights, setHighlights] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [activities, setActivities] = useState([]);
+  // const [highlights, setHighlights] = useState([]);
+  // const [categories, setCategories] = useState([]);
+  // const [activities, setActivities] = useState([]);
 
   
     // Fetch highlights
@@ -29,7 +29,6 @@ const Hero = () => {
     //   setActivities(data);
     // });
   // }, []);
-  console.log(categories);
 
   return (
     <div className='w-full h-96 relative'>
